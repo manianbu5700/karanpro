@@ -22,7 +22,7 @@ test('Alert', async ({ page }) => {
 
     await page.once('dialog', async (dialog) => {
         console.log("Prompt Alert:", dialog.message())
-        await dialog.accept('abc')
+        await dialog.accept('manianbu')
     })
 
     await page.locator('//button[@onclick="promptbox()"]').click()
